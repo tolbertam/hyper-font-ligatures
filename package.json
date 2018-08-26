@@ -1,0 +1,15 @@
+{
+  "name": "hyper-font-ligatures",
+  "version": "0.0.1",
+  "description": "Extension for Hyper.app to enable Font Ligatures",
+  "main": "index.js",
+  "repository": "https://github.com/tolbertam/hyper-font-ligatures",
+  "author": { 
+    "name": "Andy Tolbert",
+    "email": "x@andrewtolbert.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "xterm-addon-ligatures": "0.1.0-beta-2"
+  }
+}
