@@ -18,7 +18,7 @@ exports.decorateTerm = (Term, { React,  notify }) => {
     }
 
     render() {
-			return React.createElement(Term,
+      return React.createElement(Term,
         Object.assign(
           {},
           this.props,
