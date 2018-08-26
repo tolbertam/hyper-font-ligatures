@@ -11,5 +11,11 @@
   "license": "MIT",
   "dependencies": {
     "xterm-addon-ligatures": "0.1.0-beta-2"
-  }
+  },
+  "keywords": [
+    "hyper",
+    "font",
+    "fonts",
+    "ligatures"
+  ]
 }
