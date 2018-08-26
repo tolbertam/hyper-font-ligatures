@@ -28,6 +28,8 @@ plugins array to include `hyper-font-ligatures`:
 plugins: ['hyper-font-ligatures'],
 ```
 
+In both cases, a 'Full Reload' (`View -> Full Reload`) is required.
+
 [font ligatures]: https://www.hanselman.com/blog/MonospacedProgrammingFontsWithLigatures.aspx
 [font-ligatures]: https://github.com/princjef/font-ligatures
 [xterm-addon-ligatures]: https://github.com/xtermjs/xterm-addon-ligatures
