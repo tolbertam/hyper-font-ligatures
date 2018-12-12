@@ -8,6 +8,10 @@ exports.decorateTerm = (Term, { React,  notify }) => {
     }
 
     onDecorated(term) {
+      if (!term) {
+        return;
+      }
+
       if (this.props.onDecorated) {
         this.props.onDecorated(term);
       }
