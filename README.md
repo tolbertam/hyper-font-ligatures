@@ -1,7 +1,7 @@
 hyper-font-ligatures
 ====================
 
-Enables [font ligatures][font ligatures] for [Hyper][Hyper 2.1+]
+Enables [font ligatures][font ligatures] for [Hyper 2.1+][Hyper]
 via the [xterm-addon-ligatures][xterm-addon-ligatures] and 
 [font-ligatures][font-ligatures] packages.
 
