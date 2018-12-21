@@ -1,11 +1,7 @@
 hyper-font-ligatures
 ====================
 
-**Disclaimer**:  This plugin currently relies on a version of
-[Hyper][Hyper] that is currently not released (depends on
-[#3178][#3178]).
-
-Enables [font ligatures][font ligatures] for [Hyper][Hyper]
+Enables [font ligatures][font ligatures] for [Hyper][Hyper 2.1+]
 via the [xterm-addon-ligatures][xterm-addon-ligatures] and 
 [font-ligatures][font-ligatures] packages.
 
@@ -15,6 +11,9 @@ Use fonts supporting ligatures such as [Fira Code][Fira Code],
 [Hasklig][Hasklig], and [Iosevka][Iosevka] to benefit from this plugin.
 
 ## Installation
+
+**Disclaimer**: Please note that this plugin requires Hyper version 2.1.0
+or later.
 
 ### Using the built-in Hyper plugin manager
 ```bash
