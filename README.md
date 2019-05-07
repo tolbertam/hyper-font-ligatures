@@ -15,6 +15,11 @@ Use fonts supporting ligatures such as [Fira Code][Fira Code],
 **Disclaimer**: Please note that this plugin requires Hyper version 2.1.0
 or later.
 
+**Also note** that this plugin currently does not work with Hyper 3.  See
+[issue #8](https://github.com/tolbertam/hyper-font-ligatures/issues/8) for
+more details.
+
+
 ### Using the built-in Hyper plugin manager
 ```bash
 $ hyper i hyper-font-ligatures
