@@ -1,6 +1,6 @@
 {
   "name": "hyper-font-ligatures",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Extension for Hyper.app to enable Font Ligatures",
   "main": "index.js",
   "repository": "https://github.com/tolbertam/hyper-font-ligatures",
