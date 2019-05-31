@@ -25,7 +25,7 @@ $ hyper i hyper-font-ligatures
 ```
 
 ### Using the .hyper.js file
-Open the `~/.hyper.js` file using your favorite text editor and edit the
+Open the [.hyper.js] file using your favorite text editor and edit the
 plugins array to include `hyper-font-ligatures`:
 ```js
 plugins: ['hyper-font-ligatures'],
@@ -42,9 +42,9 @@ seen with hyper 2.
 
 To disable WebGL rendering, set `webGLRenderer` to `false` in the `config`
 section of your
-[.hyper.js configuration file](https://hyper.is/#config-location), i.e.:
+[.hyper.js] configuration file, i.e.:
 
-```json
+```javascript
 module.exports = {
   config: {
     webGLRenderer: false
@@ -67,5 +67,6 @@ In all cases, a 'Full Reload' (`View -> Full Reload`) is required.
 [Fira Code]: https://github.com/tonsky/FiraCode
 [Hasklig]: https://github.com/i-tu/Hasklig
 [hyper]: https://hyper.is
+[.hyper.js]: https://hyper.is/#config-location
 [Iosevka]: https://github.com/be5invis/Iosevka
 [#3178]: https://github.com/zeit/hyper/pull/3178
