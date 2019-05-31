@@ -47,7 +47,7 @@ section of your
 ```javascript
 module.exports = {
   config: {
-    webGLRenderer: false
+    webGLRenderer: false,
   },
   plugins: [
     "hyper-font-ligatures"
