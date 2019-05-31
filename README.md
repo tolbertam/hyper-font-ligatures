@@ -1,8 +1,8 @@
 hyper-font-ligatures
 ====================
 
-Enables [font ligatures][font ligatures] for [Hyper 2.1+][Hyper]
-via the [xterm-addon-ligatures][xterm-addon-ligatures] and 
+Enables [font ligatures][font ligatures] for [hyper 2.1+][hyper]
+via the [xterm-addon-ligatures][xterm-addon-ligatures] and
 [font-ligatures][font-ligatures] packages.
 
 ![](https://raw.githubusercontent.com/tolbertam/hyper-font-ligatures/master/images/preview.png)
@@ -12,15 +12,14 @@ Use fonts supporting ligatures such as [Fira Code][Fira Code],
 
 ## Installation
 
-**Disclaimer**: Please note that this plugin requires Hyper version 2.1.0
+**Disclaimer**: Please note that this plugin requires hyper version 2.1.0
 or later.
 
-**Also note** that this plugin currently does not work with Hyper 3.  See
-[issue #8](https://github.com/tolbertam/hyper-font-ligatures/issues/8) for
-more details.
+**Also note**: For those on hyper 3+, you must
+[disable WebGL rendering](#disabling-webgl-rendering) for this
+plugin to function.
 
-
-### Using the built-in Hyper plugin manager
+### Using the built-in hyper plugin manager
 ```bash
 $ hyper i hyper-font-ligatures
 ```
@@ -32,7 +31,34 @@ plugins array to include `hyper-font-ligatures`:
 plugins: ['hyper-font-ligatures'],
 ```
 
-In both cases, a 'Full Reload' (`View -> Full Reload`) is required.
+### Disabling WebGL Rendering
+
+if you are running hyper 3+, this plugin currently does not work with hyper 3
+unless you disable WebGL rendering.
+
+Note that WebGL rendering was a major performance improvement introduced
+in hyper 3, by disabling it you should expect the same level of performance
+seen with hyper 2.
+
+To disable WebGL rendering, set `webGLRenderer` to `false` in the `config`
+section of your
+[.hyper.js configuration file](https://hyper.is/#config-location), i.e.:
+
+```json
+module.exports = {
+  config: {
+    webGLRenderer: false
+  },
+  plugins: [
+    "hyper-font-ligatures"
+  ],
+};
+```
+
+See [issue #8](https://github.com/tolbertam/hyper-font-ligatures/issues/8) and
+[zeit/hyper#3607](https://github.com/zeit/hyper/issues/3607) more details.
+
+In all cases, a 'Full Reload' (`View -> Full Reload`) is required.
 
 [font ligatures]: https://www.hanselman.com/blog/MonospacedProgrammingFontsWithLigatures.aspx
 [font-ligatures]: https://github.com/princjef/font-ligatures
@@ -40,6 +66,6 @@ In both cases, a 'Full Reload' (`View -> Full Reload`) is required.
 [xterm.js]: https://github.com/xtermjs/xterm.js
 [Fira Code]: https://github.com/tonsky/FiraCode
 [Hasklig]: https://github.com/i-tu/Hasklig
-[Hyper]: https://hyper.is
+[hyper]: https://hyper.is
 [Iosevka]: https://github.com/be5invis/Iosevka
 [#3178]: https://github.com/zeit/hyper/pull/3178
