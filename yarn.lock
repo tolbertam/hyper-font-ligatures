@@ -51,10 +51,10 @@ tiny-inflate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/tiny-inflate/-/tiny-inflate-1.0.2.tgz#93d9decffc8805bd57eae4310f0b745e9b6fb3a7"
 
-xterm-addon-ligatures@0.5.1:
-  version "0.5.1"
-  resolved "https://registry.npmjs.org/xterm-addon-ligatures/-/xterm-addon-ligatures-0.5.1.tgz#40ff69c43b6406aaf130fdfe9a43ca4eac49f892"
-  integrity sha512-L70vyVAapDvBBti1bqFTUQOd6R6LH5qKzqZ76sERKkf75+u++sylqflCdwT8zmorK6zxcc3vq4+I4GDYawgYrQ==
+xterm-addon-ligatures@0.6.0-beta.1:
+  version "0.6.0-beta.1"
+  resolved "https://registry.npmjs.org/xterm-addon-ligatures/-/xterm-addon-ligatures-0.6.0-beta.1.tgz#4c91c045eb1dd2b7ec77330ec7cc68cd46194db6"
+  integrity sha512-rhn/bZfmQJcTDHfe7WwvqA8XGWyN9Kl+FCEy23J87C14OI9Ao0sEMZ2XeXHINVJleUKl3gCxxAAQcYRUb5JCQw==
   dependencies:
     font-finder "^1.1.0"
     font-ligatures "^1.4.0"
