@@ -1,10 +1,11 @@
-const ligatures = require('xterm-addon-ligatures');
+const { LigaturesAddon } = require('xterm-addon-ligatures');
 
 exports.decorateTerm = (Term, { React,  notify }) => {
   return class extends React.Component {
     constructor(props, context) {
       super(props, context);
       this.onDecorated = this.onDecorated.bind(this);
+      this.ligaturesAddon = new LigaturesAddon();
     }
 
     onDecorated(term) {
@@ -17,7 +18,7 @@ exports.decorateTerm = (Term, { React,  notify }) => {
       }
 
       if (term.term) {
-        ligatures.enableLigatures(term.term);
+        term.term.loadAddon(this.ligaturesAddon)
       }
     }
 
