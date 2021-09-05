@@ -15,9 +15,7 @@ Use fonts supporting ligatures such as [Fira Code][Fira Code],
 **Disclaimer**: Please note that this plugin requires hyper version 2.1.0
 or later.
 
-**Also note**: For those on hyper 3+, you must
-[disable WebGL rendering](#disabling-webgl-rendering) for this
-plugin to function.
+**Also note**: For those using WebGL, there are several known issues. To avoid these issues, [disable WebGL rendering](#disabling-webgl-rendering).
 
 ### Using the built-in hyper plugin manager
 ```bash
@@ -30,15 +28,14 @@ plugins array to include `hyper-font-ligatures`:
 ```js
 plugins: ['hyper-font-ligatures'],
 ```
+### WebGL Rendering Issues
+
+If you are running hyper with WebGL rendering enabled, you may run into some rendering glitches. See these issues for more information:
+
+- https://github.com/vercel/hyper/issues/5757
+- https://github.com/xtermjs/xterm.js/issues/3303
 
 ### Disabling WebGL Rendering
-
-if you are running hyper 3+, this plugin currently does not work with hyper 3
-unless you disable WebGL rendering.
-
-Note that WebGL rendering was a major performance improvement introduced
-in hyper 3, by disabling it you should expect the same level of performance
-seen with hyper 2.
 
 To disable WebGL rendering, set `webGLRenderer` to `false` in the `config`
 section of your
